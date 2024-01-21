@@ -98,7 +98,7 @@ func (m *GfToken) GenerateToken(ctx context.Context, key string, data interface{
 	return
 }
 
-// 解析token (只验证格式并不验证过期)
+// ParseToken 解析token (只验证格式并不验证过期)
 func (m *GfToken) ParseToken(r *ghttp.Request) (*CustomClaims, error) {
 	token, err := m.GetToken(r)
 	if err != nil {
@@ -111,7 +111,7 @@ func (m *GfToken) ParseToken(r *ghttp.Request) (*CustomClaims, error) {
 	}
 }
 
-// 检查缓存的token是否有效且自动刷新缓存token
+// IsEffective 检查缓存的token是否有效且自动刷新缓存token
 func (m *GfToken) IsEffective(ctx context.Context, token string) bool {
 	cacheToken, key, err := m.GetTokenData(ctx, token)
 	if err != nil {
@@ -154,7 +154,7 @@ func (m *GfToken) GetTokenData(ctx context.Context, token string) (tData *TokenD
 	return
 }
 
-// 检查token是否过期 (过期时间 = 超时时间 + 缓存刷新时间)
+// IsNotExpired 检查token是否过期 (过期时间 = 超时时间 + 缓存刷新时间)
 func (m *GfToken) IsNotExpired(token string) (*CustomClaims, int) {
 	if customClaims, err := m.userJwt.ParseToken(token); err == nil {
 		if time.Now().Unix()-customClaims.ExpiresAt.Unix() < 0 {
@@ -170,7 +170,7 @@ func (m *GfToken) IsNotExpired(token string) (*CustomClaims, int) {
 	}
 }
 
-// 刷新token的缓存有效期
+// RefreshToken 刷新token的缓存有效期
 func (m *GfToken) RefreshToken(oldToken string) (newToken string, err error) {
 	if newToken, err = m.userJwt.RefreshToken(oldToken, m.diedLine().Unix()); err != nil {
 		return
@@ -178,7 +178,7 @@ func (m *GfToken) RefreshToken(oldToken string) (newToken string, err error) {
 	return
 }
 
-// token是否处于刷新期
+// IsRefresh token是否处于刷新期
 func (m *GfToken) IsRefresh(token string) bool {
 	if m.MaxRefresh == 0 {
 		return false

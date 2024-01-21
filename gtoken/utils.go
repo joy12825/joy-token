@@ -8,8 +8,8 @@ import (
 const FailedAuthCode = 401
 
 type AuthFailed struct {
-	Code    int    `json:"code"`
-	Message string `json:"message"`
+	Code    int    `json:"Code"`
+	Message string `json:"Message"`
 }
 
 func (m *GfToken) GetRequestToken(r *ghttp.Request) (token string) {
@@ -50,7 +50,7 @@ func (m *GfToken) IsLogin(r *ghttp.Request) (b bool, failed *AuthFailed) {
 		b = false
 		failed = &AuthFailed{
 			Code:    FailedAuthCode,
-			Message: "token已失效",
+			Message: "Token已失效",
 		}
 	}
 	return
