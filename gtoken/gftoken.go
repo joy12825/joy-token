@@ -149,7 +149,7 @@ func (m *GfToken) GetTokenData(ctx context.Context, token string) (tData *TokenD
 	}
 	tData, err = m.getCache(ctx, m.CacheKey+key)
 	if tData == nil || tData.UuId != uuid {
-		err = gerror.New("token is invalid")
+		err = gerror.New("Token is invalid")
 	}
 	return
 }
@@ -206,7 +206,7 @@ func (m *GfToken) EncryptToken(ctx context.Context, key string, randStr ...strin
 	}
 	token, err := gaes.Encrypt([]byte(key+uuid), m.EncryptKey)
 	if err != nil {
-		g.Log().Error(ctx, "[GFToken]encrypt error Token:", key, err)
+		g.Log().Error(ctx, "[GFToken] encrypt error Token:", key, err)
 		err = gerror.New("encrypt error")
 		return
 	}
@@ -222,13 +222,13 @@ func (m *GfToken) DecryptToken(ctx context.Context, token string) (DecryptStr, u
 	}
 	token64, err := gbase64.Decode([]byte(token))
 	if err != nil {
-		g.Log().Info(ctx, "[GFToken]decode error Token:", token, err)
+		g.Log().Info(ctx, "[GFToken] decode error Token:", token, err)
 		err = gerror.New("decode error")
 		return
 	}
 	decryptToken, err := gaes.Decrypt(token64, m.EncryptKey)
 	if err != nil {
-		g.Log().Info(ctx, "[GFToken]decrypt error Token:", token, err)
+		g.Log().Info(ctx, "[GFToken] decrypt error Token:", token, err)
 		err = gerror.New("decrypt error")
 		return
 	}
