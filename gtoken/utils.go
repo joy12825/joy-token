@@ -38,7 +38,7 @@ func (m *GfToken) GetToken(r *ghttp.Request) (tData *TokenData, err error) {
 	return
 }
 
-func (m *GfToken) IsLogin(r *ghttp.Request) (b bool, failed *AuthFailed) {
+func (m *GfToken) IsLogin(r *ghttp.Request) (b bool) {
 	b = true
 	urlPath := r.URL.Path
 	if !m.AuthPath(urlPath) {
@@ -46,12 +46,6 @@ func (m *GfToken) IsLogin(r *ghttp.Request) (b bool, failed *AuthFailed) {
 		return
 	}
 	token := m.GetRequestToken(r)
-	if m.IsEffective(r.GetCtx(), token) == false {
-		b = false
-		failed = &AuthFailed{
-			Code:    FailedAuthCode,
-			Message: "Token已失效",
-		}
-	}
+	b = m.IsEffective(r.GetCtx(), token)
 	return
 }

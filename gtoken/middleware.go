@@ -13,11 +13,7 @@ func (m *GfToken) Middleware(group *ghttp.RouterGroup) error {
 }
 
 func (m *GfToken) authMiddleware(r *ghttp.Request) {
-	b, res := m.IsLogin(r)
-	if !b {
-		r.Response.WriteJson(res)
-		return
-	}
+	_ = m.IsLogin(r)
 	r.Middleware.Next()
 }
 
