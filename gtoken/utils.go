@@ -46,6 +46,10 @@ func (m *GfToken) IsLogin(r *ghttp.Request) (b bool) {
 		return
 	}
 	token := m.GetRequestToken(r)
+	if len(token) == 0 {
+		b = false
+		return
+	}
 	b = m.IsEffective(r.GetCtx(), token)
 	return
 }
