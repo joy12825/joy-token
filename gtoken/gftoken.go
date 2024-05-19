@@ -113,6 +113,9 @@ func (m *GfToken) ParseToken(r *ghttp.Request) (*CustomClaims, error) {
 
 // IsEffective 检查缓存的token是否有效且自动刷新缓存token
 func (m *GfToken) IsEffective(ctx context.Context, token string) bool {
+	if len(token) == 0 {
+		return false
+	}
 	cacheToken, key, err := m.GetTokenData(ctx, token)
 	if err != nil {
 		g.Log().Info(ctx, err)
