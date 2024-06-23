@@ -1,19 +1,27 @@
-# github.com/BurntSushi/toml v1.2.1
+# github.com/BurntSushi/toml v1.3.2
 ## explicit; go 1.16
 github.com/BurntSushi/toml
 github.com/BurntSushi/toml/internal
 # github.com/cespare/xxhash/v2 v2.2.0
 ## explicit; go 1.11
-# github.com/clbanning/mxj/v2 v2.5.7
+github.com/cespare/xxhash/v2
+# github.com/clbanning/mxj/v2 v2.7.0
 ## explicit; go 1.15
 github.com/clbanning/mxj/v2
 # github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
 ## explicit
-# github.com/fatih/color v1.13.0
-## explicit; go 1.13
+github.com/dgryski/go-rendezvous
+# github.com/emirpasic/gods v1.18.1
+## explicit; go 1.2
+github.com/emirpasic/gods/containers
+github.com/emirpasic/gods/trees
+github.com/emirpasic/gods/trees/btree
+github.com/emirpasic/gods/utils
+# github.com/fatih/color v1.16.0
+## explicit; go 1.17
 github.com/fatih/color
-# github.com/fsnotify/fsnotify v1.6.0
-## explicit; go 1.16
+# github.com/fsnotify/fsnotify v1.7.0
+## explicit; go 1.17
 github.com/fsnotify/fsnotify
 # github.com/go-logr/logr v1.2.4
 ## explicit; go 1.16
@@ -22,121 +30,119 @@ github.com/go-logr/logr/funcr
 # github.com/go-logr/stdr v1.2.2
 ## explicit; go 1.16
 github.com/go-logr/stdr
-# github.com/go-redis/redis/v8 v8.11.5
-## explicit; go 1.17
 # github.com/golang-jwt/jwt/v4 v4.4.2
 ## explicit; go 1.16
 github.com/golang-jwt/jwt/v4
-# github.com/gorilla/websocket v1.5.0
-## explicit; go 1.12
+# github.com/gorilla/websocket v1.5.1
+## explicit; go 1.20
 github.com/gorilla/websocket
-# github.com/grokify/html-strip-tags-go v0.0.1
-## explicit; go 1.13
+# github.com/grokify/html-strip-tags-go v0.1.0
+## explicit; go 1.16
 github.com/grokify/html-strip-tags-go
-# github.com/joy12825/gf v1.16.7-0.20230815094342-fa3daefe03ef
+# github.com/joy12825/gf/contrib/nosql/redis/v2 v2.7.2
 ## explicit; go 1.18
-github.com/joy12825/gf
-github.com/joy12825/gf/container/garray
-github.com/joy12825/gf/container/glist
-github.com/joy12825/gf/container/gmap
-github.com/joy12825/gf/container/gpool
-github.com/joy12825/gf/container/gqueue
-github.com/joy12825/gf/container/gset
-github.com/joy12825/gf/container/gtree
-github.com/joy12825/gf/container/gtype
-github.com/joy12825/gf/container/gvar
-github.com/joy12825/gf/crypto/gaes
-github.com/joy12825/gf/crypto/gmd5
-github.com/joy12825/gf/database/gdb
-github.com/joy12825/gf/database/gredis
-github.com/joy12825/gf/debug/gdebug
-github.com/joy12825/gf/encoding/gbase64
-github.com/joy12825/gf/encoding/gbinary
-github.com/joy12825/gf/encoding/gcharset
-github.com/joy12825/gf/encoding/gcompress
-github.com/joy12825/gf/encoding/ghash
-github.com/joy12825/gf/encoding/ghtml
-github.com/joy12825/gf/encoding/gini
-github.com/joy12825/gf/encoding/gjson
-github.com/joy12825/gf/encoding/gproperties
-github.com/joy12825/gf/encoding/gtoml
-github.com/joy12825/gf/encoding/gurl
-github.com/joy12825/gf/encoding/gxml
-github.com/joy12825/gf/encoding/gyaml
-github.com/joy12825/gf/errors/gcode
-github.com/joy12825/gf/errors/gerror
-github.com/joy12825/gf/frame/g
-github.com/joy12825/gf/frame/gins
-github.com/joy12825/gf/i18n/gi18n
-github.com/joy12825/gf/internal/command
-github.com/joy12825/gf/internal/consts
-github.com/joy12825/gf/internal/deepcopy
-github.com/joy12825/gf/internal/empty
-github.com/joy12825/gf/internal/fileinfo
-github.com/joy12825/gf/internal/httputil
-github.com/joy12825/gf/internal/instance
-github.com/joy12825/gf/internal/intlog
-github.com/joy12825/gf/internal/json
-github.com/joy12825/gf/internal/reflection
-github.com/joy12825/gf/internal/rwmutex
-github.com/joy12825/gf/internal/tracing
-github.com/joy12825/gf/internal/utils
-github.com/joy12825/gf/net/gclient
-github.com/joy12825/gf/net/ghttp
-github.com/joy12825/gf/net/ghttp/internal/response
-github.com/joy12825/gf/net/ghttp/internal/swaggerui
-github.com/joy12825/gf/net/gipv4
-github.com/joy12825/gf/net/gipv6
-github.com/joy12825/gf/net/goai
-github.com/joy12825/gf/net/gsel
-github.com/joy12825/gf/net/gsvc
-github.com/joy12825/gf/net/gtcp
-github.com/joy12825/gf/net/gtrace
-github.com/joy12825/gf/net/gtrace/internal/provider
-github.com/joy12825/gf/net/gudp
-github.com/joy12825/gf/os/gcache
-github.com/joy12825/gf/os/gcfg
-github.com/joy12825/gf/os/gcmd
-github.com/joy12825/gf/os/gctx
-github.com/joy12825/gf/os/genv
-github.com/joy12825/gf/os/gfile
-github.com/joy12825/gf/os/gfpool
-github.com/joy12825/gf/os/gfsnotify
-github.com/joy12825/gf/os/glog
-github.com/joy12825/gf/os/gmlock
-github.com/joy12825/gf/os/gmutex
-github.com/joy12825/gf/os/gproc
-github.com/joy12825/gf/os/gres
-github.com/joy12825/gf/os/grpool
-github.com/joy12825/gf/os/gsession
-github.com/joy12825/gf/os/gspath
-github.com/joy12825/gf/os/gstructs
-github.com/joy12825/gf/os/gtime
-github.com/joy12825/gf/os/gtimer
-github.com/joy12825/gf/os/gview
-github.com/joy12825/gf/text/gregex
-github.com/joy12825/gf/text/gstr
-github.com/joy12825/gf/util/gconv
-github.com/joy12825/gf/util/gmeta
-github.com/joy12825/gf/util/gmode
-github.com/joy12825/gf/util/gpage
-github.com/joy12825/gf/util/grand
-github.com/joy12825/gf/util/gtag
-github.com/joy12825/gf/util/guid
-github.com/joy12825/gf/util/gutil
-github.com/joy12825/gf/util/gvalid
-github.com/joy12825/gf/util/gvalid/internal/builtin
-# github.com/joy12825/gf/contrib/nosql/redis v0.0.0-20230815094342-fa3daefe03ef
+github.com/joy12825/gf/contrib/nosql/redis/v2
+# github.com/joy12825/gf/v2 v2.7.2
 ## explicit; go 1.18
-github.com/joy12825/gf/contrib/nosql/redis
+github.com/joy12825/gf/v2/container/garray
+github.com/joy12825/gf/v2/container/glist
+github.com/joy12825/gf/v2/container/gmap
+github.com/joy12825/gf/v2/container/gpool
+github.com/joy12825/gf/v2/container/gqueue
+github.com/joy12825/gf/v2/container/gset
+github.com/joy12825/gf/v2/container/gtree
+github.com/joy12825/gf/v2/container/gtype
+github.com/joy12825/gf/v2/container/gvar
+github.com/joy12825/gf/v2/crypto/gaes
+github.com/joy12825/gf/v2/crypto/gmd5
+github.com/joy12825/gf/v2/database/gdb
+github.com/joy12825/gf/v2/database/gredis
+github.com/joy12825/gf/v2/debug/gdebug
+github.com/joy12825/gf/v2/encoding/gbase64
+github.com/joy12825/gf/v2/encoding/gbinary
+github.com/joy12825/gf/v2/encoding/gcharset
+github.com/joy12825/gf/v2/encoding/gcompress
+github.com/joy12825/gf/v2/encoding/ghash
+github.com/joy12825/gf/v2/encoding/ghtml
+github.com/joy12825/gf/v2/encoding/gini
+github.com/joy12825/gf/v2/encoding/gjson
+github.com/joy12825/gf/v2/encoding/gproperties
+github.com/joy12825/gf/v2/encoding/gtoml
+github.com/joy12825/gf/v2/encoding/gurl
+github.com/joy12825/gf/v2/encoding/gxml
+github.com/joy12825/gf/v2/encoding/gyaml
+github.com/joy12825/gf/v2/errors/gcode
+github.com/joy12825/gf/v2/errors/gerror
+github.com/joy12825/gf/v2/frame/g
+github.com/joy12825/gf/v2/frame/gins
+github.com/joy12825/gf/v2/i18n/gi18n
+github.com/joy12825/gf/v2/internal/command
+github.com/joy12825/gf/v2/internal/consts
+github.com/joy12825/gf/v2/internal/deepcopy
+github.com/joy12825/gf/v2/internal/empty
+github.com/joy12825/gf/v2/internal/errors
+github.com/joy12825/gf/v2/internal/fileinfo
+github.com/joy12825/gf/v2/internal/httputil
+github.com/joy12825/gf/v2/internal/instance
+github.com/joy12825/gf/v2/internal/intlog
+github.com/joy12825/gf/v2/internal/json
+github.com/joy12825/gf/v2/internal/reflection
+github.com/joy12825/gf/v2/internal/rwmutex
+github.com/joy12825/gf/v2/internal/tracing
+github.com/joy12825/gf/v2/internal/utils
+github.com/joy12825/gf/v2/net/gclient
+github.com/joy12825/gf/v2/net/ghttp
+github.com/joy12825/gf/v2/net/ghttp/internal/response
+github.com/joy12825/gf/v2/net/ghttp/internal/swaggerui
+github.com/joy12825/gf/v2/net/gipv4
+github.com/joy12825/gf/v2/net/gipv6
+github.com/joy12825/gf/v2/net/goai
+github.com/joy12825/gf/v2/net/gsel
+github.com/joy12825/gf/v2/net/gsvc
+github.com/joy12825/gf/v2/net/gtcp
+github.com/joy12825/gf/v2/net/gtrace
+github.com/joy12825/gf/v2/net/gtrace/internal/provider
+github.com/joy12825/gf/v2/net/gudp
+github.com/joy12825/gf/v2/os/gcache
+github.com/joy12825/gf/v2/os/gcfg
+github.com/joy12825/gf/v2/os/gcmd
+github.com/joy12825/gf/v2/os/gctx
+github.com/joy12825/gf/v2/os/genv
+github.com/joy12825/gf/v2/os/gfile
+github.com/joy12825/gf/v2/os/gfpool
+github.com/joy12825/gf/v2/os/gfsnotify
+github.com/joy12825/gf/v2/os/glog
+github.com/joy12825/gf/v2/os/gmetric
+github.com/joy12825/gf/v2/os/gmlock
+github.com/joy12825/gf/v2/os/gproc
+github.com/joy12825/gf/v2/os/gres
+github.com/joy12825/gf/v2/os/grpool
+github.com/joy12825/gf/v2/os/gsession
+github.com/joy12825/gf/v2/os/gspath
+github.com/joy12825/gf/v2/os/gstructs
+github.com/joy12825/gf/v2/os/gtime
+github.com/joy12825/gf/v2/os/gtimer
+github.com/joy12825/gf/v2/os/gview
+github.com/joy12825/gf/v2/text/gregex
+github.com/joy12825/gf/v2/text/gstr
+github.com/joy12825/gf/v2/util/gconv
+github.com/joy12825/gf/v2/util/gmeta
+github.com/joy12825/gf/v2/util/gmode
+github.com/joy12825/gf/v2/util/gpage
+github.com/joy12825/gf/v2/util/grand
+github.com/joy12825/gf/v2/util/gtag
+github.com/joy12825/gf/v2/util/guid
+github.com/joy12825/gf/v2/util/gutil
+github.com/joy12825/gf/v2/util/gvalid
+github.com/joy12825/gf/v2/util/gvalid/internal/builtin
 # github.com/magiconair/properties v1.8.7
 ## explicit; go 1.19
 github.com/magiconair/properties
-# github.com/mattn/go-colorable v0.1.9
-## explicit; go 1.13
+# github.com/mattn/go-colorable v0.1.13
+## explicit; go 1.15
 github.com/mattn/go-colorable
-# github.com/mattn/go-isatty v0.0.14
-## explicit; go 1.12
+# github.com/mattn/go-isatty v0.0.20
+## explicit; go 1.15
 github.com/mattn/go-isatty
 # github.com/mattn/go-runewidth v0.0.9
 ## explicit; go 1.9
@@ -144,6 +150,16 @@ github.com/mattn/go-runewidth
 # github.com/olekukonko/tablewriter v0.0.5
 ## explicit; go 1.12
 github.com/olekukonko/tablewriter
+# github.com/redis/go-redis/v9 v9.2.1
+## explicit; go 1.18
+github.com/redis/go-redis/v9
+github.com/redis/go-redis/v9/internal
+github.com/redis/go-redis/v9/internal/hashtag
+github.com/redis/go-redis/v9/internal/hscan
+github.com/redis/go-redis/v9/internal/pool
+github.com/redis/go-redis/v9/internal/proto
+github.com/redis/go-redis/v9/internal/rand
+github.com/redis/go-redis/v9/internal/util
 # go.opentelemetry.io/otel v1.16.0
 ## explicit; go 1.19
 go.opentelemetry.io/otel
@@ -155,9 +171,8 @@ go.opentelemetry.io/otel/internal/attribute
 go.opentelemetry.io/otel/internal/baggage
 go.opentelemetry.io/otel/internal/global
 go.opentelemetry.io/otel/propagation
-go.opentelemetry.io/otel/semconv/internal
 go.opentelemetry.io/otel/semconv/v1.17.0
-go.opentelemetry.io/otel/semconv/v1.4.0
+go.opentelemetry.io/otel/semconv/v1.18.0
 # go.opentelemetry.io/otel/metric v1.16.0
 ## explicit; go 1.19
 go.opentelemetry.io/otel/metric
@@ -173,18 +188,17 @@ go.opentelemetry.io/otel/sdk/trace
 # go.opentelemetry.io/otel/trace v1.16.0
 ## explicit; go 1.19
 go.opentelemetry.io/otel/trace
-# golang.org/x/net v0.10.0
-## explicit; go 1.17
+# golang.org/x/net v0.24.0
+## explicit; go 1.18
 golang.org/x/net/internal/socks
 golang.org/x/net/proxy
-# golang.org/x/sys v0.8.0
-## explicit; go 1.17
-golang.org/x/sys/internal/unsafeheader
+# golang.org/x/sys v0.19.0
+## explicit; go 1.18
 golang.org/x/sys/unix
 golang.org/x/sys/windows
 golang.org/x/sys/windows/registry
-# golang.org/x/text v0.9.0
-## explicit; go 1.17
+# golang.org/x/text v0.14.0
+## explicit; go 1.18
 golang.org/x/text/encoding
 golang.org/x/text/encoding/charmap
 golang.org/x/text/encoding/ianaindex

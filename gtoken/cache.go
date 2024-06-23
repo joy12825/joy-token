@@ -2,8 +2,8 @@ package gtoken
 
 import (
 	"context"
-	"github.com/joy12825/gf/container/gvar"
-	"github.com/joy12825/gf/util/gconv"
+	"github.com/joy12825/gf/v2/container/gvar"
+	"github.com/joy12825/gf/v2/util/gconv"
 	"time"
 )
 

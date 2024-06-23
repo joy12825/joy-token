@@ -1,10 +1,10 @@
 package gtoken
 
 import (
-	_ "github.com/joy12825/gf/contrib/nosql/redis"
-	"github.com/joy12825/gf/database/gredis"
-	"github.com/joy12825/gf/frame/g"
-	"github.com/joy12825/gf/os/gcache"
+	_ "github.com/joy12825/gf/contrib/nosql/redis/v2"
+	"github.com/joy12825/gf/v2/database/gredis"
+	"github.com/joy12825/gf/v2/frame/g"
+	"github.com/joy12825/gf/v2/os/gcache"
 )
 
 var (

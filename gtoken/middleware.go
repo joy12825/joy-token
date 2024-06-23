@@ -1,8 +1,8 @@
 package gtoken
 
 import (
-	"github.com/joy12825/gf/net/ghttp"
-	"github.com/joy12825/gf/text/gstr"
+	"github.com/joy12825/gf/v2/net/ghttp"
+	"github.com/joy12825/gf/v2/text/gstr"
 	"strings"
 )
 

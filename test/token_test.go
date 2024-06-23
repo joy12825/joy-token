@@ -1,11 +1,11 @@
 package test
 
 import (
-	"github.com/joy12825/gf/crypto/gmd5"
-	"github.com/joy12825/gf/database/gredis"
-	"github.com/joy12825/gf/frame/g"
-	"github.com/joy12825/gf/net/ghttp"
-	"github.com/joy12825/gf/util/grand"
+	"github.com/joy12825/gf/v2/crypto/gmd5"
+	"github.com/joy12825/gf/v2/database/gredis"
+	"github.com/joy12825/gf/v2/frame/g"
+	"github.com/joy12825/gf/v2/net/ghttp"
+	"github.com/joy12825/gf/v2/util/grand"
 	"github.com/joy12825/joy-token/gtoken"
 	"testing"
 )
